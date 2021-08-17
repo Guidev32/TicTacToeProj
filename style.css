@@ -1,0 +1,79 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Nunito' , sans-serif;
+}
+
+.desc,
+.winner {    
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.winner {
+    display: none;
+}
+
+.desc span,
+.winner span {
+    padding: 0 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid red;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+
+.content {
+    height: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    display: flex;
+}
+
+.line div {
+    border-right: 2px solid black;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    
+}
+
+.line2 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.line div:last-child {
+    border-right: 0;
+}
+
+.x {
+    color: red;
+}
+
+.o {
+    color: blue;
+}
+
+.player.x {
+    border-color: red;    
+}
+
+.player.o {
+    border-color: blue;
+}
+
