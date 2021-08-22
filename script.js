@@ -22,6 +22,9 @@ function winPattern() {
     if ( $('.a').hasClass('x') && $('.b').hasClass('x') && $('.c').hasClass('x')) {
          $('.a, .b, .c').addClass('color');
          endGame("x");
+    } else if ( $('.b').hasClass('x') && $('.d').hasClass('x') && $('.e').hasClass('x') && $('.f').hasClass('x') && $('.h').hasClass('x')) {
+        $('.b, .d, .e, .f, .h').addClass('color');
+        endGame("x");
     } else if ( $('.d').hasClass('x') && $('.e').hasClass('x') && $('.f').hasClass('x')) {
          $('.d, .e, .f').addClass('color');
          endGame("x");
@@ -37,6 +40,9 @@ function winPattern() {
     } else if ( $('.c').hasClass('x') && $('.f').hasClass('x') && $('.i').hasClass('x')) {
          $('.c, .f, .i').addClass('color');
          endGame("x");
+    } else if ($('.a').hasClass('x') && $('.e').hasClass('x') && $('.i').hasClass('x') && $('.c').hasClass('x') && $('.g').hasClass('x')) {
+        $('.a, .e, .i, .c, .g').addClass('color');
+        endGame("x");
     } else if ( $('.a').hasClass('x') && $('.e').hasClass('x') && $('.i').hasClass('x')) {
          $('.a, .e, .i').addClass('color');
          endGame("x");
