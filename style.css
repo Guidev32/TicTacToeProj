@@ -1,17 +1,22 @@
 body {
-    height: 100vh;
-    margin: 0;
+    height: calc(100vh - 80px);
+    margin: 40px 0;
     font-family: 'Nunito' , sans-serif;
+    background-color: rgb(252, 248, 245);
 }
 
 .desc,
-.winner {    
+.winner,
+.tie,
+.restart {
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.winner {
+.winner,
+.tie,
+.restart {
     display: none;
 }
 
@@ -30,7 +35,7 @@ body {
 
 
 .content {
-    height: calc(100% - 40px);
+    height: calc(100% - 80px);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -42,7 +47,7 @@ body {
 }
 
 .line div {
-    border-right: 2px solid black;
+    border-right: 4px solid black;
     height: 80px;
     width: 80px;
     display: flex;
@@ -53,8 +58,8 @@ body {
 }
 
 .line2 {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
 }
 
 .line div:last-child {
@@ -62,18 +67,33 @@ body {
 }
 
 .x {
-    color: red;
+    color: rgb(145, 13, 13);
 }
 
 .o {
-    color: blue;
+    color: rgb(21, 21, 165);
 }
 
 .player.x {
-    border-color: red;    
+    border-color: rgb(145, 13, 13);    
 }
 
 .player.o {
-    border-color: blue;
+    border-color: rgb(21, 21, 165);
+}
+.color.x {
+    background-color: rgba(255, 0 ,0 ,0.2)
+}
+.color.o {
+    background-color: rgba(0, 140, 255, 0.2)
 }
 
+button {
+    background-color: hsla(200, 80%, 50%, 1);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 90px;
+    font-size: 18px;
+    border-radius: 4px;
+}
